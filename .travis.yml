@@ -10,7 +10,6 @@ branches:
 
 cache:
   directories:
-    - node_modules
 
 install:  
   - npm install -g @angular/cli
