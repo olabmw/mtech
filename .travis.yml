@@ -10,9 +10,9 @@ branches:
 
 cache:
   directories:
-    - node_modules
+  - node_modules
 
-install:
+install:  
   - npm install
   - npm install -g @angular/cli
   - npm install -g yarn
@@ -20,6 +20,7 @@ install:
 script:
   - yarn lint
   - yarn build --base-href https://olabmw.github.io/mtech/
+
 deploy:
   provider: pages
   skip_cleanup: true
