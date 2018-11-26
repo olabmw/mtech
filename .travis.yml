@@ -12,6 +12,7 @@ cache:
   directories:
 
 install:  
+  - npm install
   - npm install -g @angular/cli
 
 script:
