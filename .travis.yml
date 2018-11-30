@@ -19,6 +19,7 @@ install:
 
 script:
   - yarn lint
+  - yarn test
   - yarn build --base-href https://olabmw.github.io/mtech/
 
 deploy:
