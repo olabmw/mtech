@@ -10,6 +10,7 @@ import {
 } from '@angular/material';
 
 import { HeaderComponent } from './header.component';
+import { ContactComponent } from '../contact/contact.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -17,7 +18,10 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent],
+      declarations: [
+        HeaderComponent,
+        ContactComponent
+      ],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -32,11 +36,11 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HeaderComponent);
-    component = fixture.componentInstance;
+    component = fixture.componentInstance;            
     fixture.detectChanges();
   });
 
-  it('should compile', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
